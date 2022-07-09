@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link th:href="@{/css/bootstrap.min.css}"
+          href="../css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .container {
+            max-width: 1800px;
+        }
+        .input-box {
+            margin: 20px;
+        }
+
+        .article-title{
+            margin-top: 50px;
+        }
+
+        footer {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container" style="max-width: 2000px">
+    <header>
+        <h1>인터넷프로그래밍 4주차 탐구활동  </h1>
+        <p style="margin-top: 25px">보기에 기술된 모든 태그와 속성을 사용하여, 하나의 HTML 파일을 프로그래밍하시오.</p>
+        <p  style="color: darkblue">
+            [보기]
+            태그 : header, nav, figure, article, section, aside, footer
+            TYPE 속성 : color, date, datetime, datetime-local, email, month, number, range, search, tel, time, url, week
+        </p>
+    </header>
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/about">About</a> |
+        <a tel="/contact">Contact us</a> |
+    </nav>
+
+    <aside class="article-title">
+        <h3>HTML 속성 사용 </h3>
+        <p>Input 태그를 통한 다양한 type 활용</p>
+    </aside>
+
+    <section>
+        <div class="input-box">
+            <span> input type text</span>
+            <input type="text" placeholder="text type 문자 입력">
+        </div>
+
+        <div class="input-box">
+            <span> input type email</span>
+            <input type="email" placeholder="example@example.com">
+        </div>
+
+        <div class="input-box">
+            <span> input type number</span>
+            <input type="number" placeholder="number type 숫자 입력">
+        </div>
+
+        <div class="input-box">
+            <span> input type tel</span>
+            <input type="tel" placeholder="핸드폰 번호를 입력">
+        </div>
+
+        <div class="input-box">
+            <span> input type range</span>
+            <input type="range">
+        </div>
+
+
+        <div class="input-box">
+            <span> input type search</span>
+            <input type="search" placeholder="검색">
+        </div>
+        <div class="input-box">
+            <span> input type date</span>
+            <input type="date">
+        </div>
+        <div class="input-box">
+            <span> input type datetime-local</span>
+            <input type="datetime-local">
+        </div>
+        <div class="input-box">
+            <span> input type month</span>
+            <input type="month">
+        </div>
+        <div class="input-box">
+            <span> input type week</span>
+            <input type="week">
+        </div>
+        <div class="input-box">
+            <span> input type time</span>
+            <input type="time">
+        </div>
+
+    </section>
+
+    <aside class="article-title">
+        <h3>HTML 태그 사용 </h3>
+        <p>figure, article, section, aside 태그 사용 </p>
+    </aside>
+
+    <section>
+        <article>
+            <figure>
+                <img src="images/steak.jpg" alt="steak" style="width:50%">
+                <figcaption style="color: peru">스테이크 </figcaption>
+            </figure>
+        </article>
+
+
+        <article class="article-title">
+            <h2>Dish Info </h2>
+        </article>
+
+        <article>
+            <h4>호주산 안심 스테이크</h4>
+            <p>리버스 시어링으로 조리한 내부 온도 55도 미디움 레어</p>
+        </article>
+
+        <article>
+            <h3>가니쉬 </h3>
+            <ul>
+                <li> 예감으로 만든 홈레시피 매쉬포테이토 </li>
+                <li> 구운 야채 ( 아스파라거스, 양파, 시금치, 새송이 </li>
+                <li> 소스 대신 곁들일 홀그레인 머스타드 </li>
+            </ul>
+        </article>
+
+    </section>
+    <hr>
+
+    <footer>
+        <p>Author: 정지우</p>
+        <p>인터넷프로그래밍 4주차 탐구활동</p>
+    </footer>
+
+</div> <!-- /container -->
+
+</body>
+</html>
